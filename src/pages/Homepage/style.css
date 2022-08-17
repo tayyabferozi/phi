@@ -1,0 +1,67 @@
+button:focus {
+    outline:0px dotted;
+    /* outline: 5px auto -webkit-focus-ring-color; */
+}
+.inputright{
+    text-align: right;
+}
+.inputcenter{
+    text-align: center;
+    color:black;
+    font-weight: bold;
+}
+.inputcenter1{
+    text-align: center;
+    color:white;
+    font-weight: bold;
+}
+
+
+
+.position{
+    top: 13%;right: 0%;
+    height:350px;
+
+}
+.position11{
+
+    top: 3%; right: 0%;
+    height:350px;
+
+
+
+}
+.position1{
+
+    top: -20%;left: 0%;
+    height:350px;
+    width: 80px;
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .position{
+       display: none;
+    }
+    .position11{
+    
+        display: none;
+    
+    
+    }
+ .position1{
+    
+     
+    top: -4%;left: 0%;
+    height:150px;
+
+    width:30px 
+    
+    }
+  }
