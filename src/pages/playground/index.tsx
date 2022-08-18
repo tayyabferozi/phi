@@ -55,6 +55,7 @@ export default function Playground() {
 
   return (
     <>
+      {isLoading && <Loader />}
       <img src="/playground-hero.png" alt="hero" />
       <div className="playground-main bg-black px-[12px] py-[6px] w-100">
         <div className="grid grid-cols-1 pl-[18px] pr-[30px] lg:px-[150px] bg-black">
@@ -333,15 +334,15 @@ export default function Playground() {
           </div>
         </div>
 
-        <div className="flex justify-center sm:flex-row gap-[10px] my-[70px]">
+        <div className="flex justify-center sm:flex-row flex-639px-column gap-[10px] my-[70px]">
           <Button
             onClick={downloadHandler}
             className="bg-btnbg rounded py-3 px-5 hover:bg-btnbg flex justify-center items-center text-center border-gradient "
           >
-            {isLoading ? <Loader /> : "DOWNLOAD"}
+            DOWNLOAD
           </Button>
           <Button className="bg-btnbg rounded py-3 px-5 hover:bg-btnbg flex justify-center items-center text-center border-gradient ">
-            View
+            I'm feeling lucky
           </Button>
         </div>
       </div>
