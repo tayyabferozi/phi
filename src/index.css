@@ -354,3 +354,9 @@ input[type="number"]:-ms-input-placeholder {
   right: 0;
   filter: blur(120px);
 }
+
+.gradient-text {
+  background: linear-gradient(to right, #4de3c7, #5869ff, #7c33f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

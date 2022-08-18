@@ -56,7 +56,12 @@ export default function Playground() {
   return (
     <>
       {isLoading && <Loader />}
-      <img src="/playground-hero.png" alt="hero" />
+      <div className="relative">
+        <img src="/playground-hero.png" alt="hero" />
+        <div className="font-russo absolute text-[5vw] text-white text-center absolute bottom-[15%] left-[50%] translate-x-[-50%] w-100">
+          BUILD YOUR OWN <span className="gradient-text">PHI</span>
+        </div>
+      </div>
       <div className="playground-main bg-black px-[12px] py-[6px] w-100">
         <div className="grid grid-cols-1 pl-[18px] pr-[30px] lg:px-[150px] bg-black">
           {/* <h5 className="text-white">Explore</h5> */}
