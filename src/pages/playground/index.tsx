@@ -72,7 +72,7 @@ export default function Playground() {
 
         <div className="grid grid-cols-1  gap-10 lg:grid-cols-1 px-[20px] lg:px-[150px] mt-[30px]">
           <div className="flex lg:flex-row flex-col">
-            <div className=" lg:w-[400px] ">
+            <div className="min-w-[260px] lg:w-[400px] ">
               {" "}
               <Button className="w-[95%] bg-btnbg pb-3 pt-3 hover:bg-btnbg rounded-none flex justify-center items-center text-center border-gradient ">
                 GENERATE ART
@@ -322,9 +322,9 @@ export default function Playground() {
               </Dropdown>
             </div>
             <div className="flex flex-wrap pr-[20px] lg:pr-[0px] ">
-              <div className="mr-1 w-[100%] h-[200px] lg:h-[866px] lg:mx-[15px] mb-[20px] lg:w-[55vw] text-boxclr">
+              <div className="mr-1 w-[100%] lg:h-[200px] lg:h-[866px] lg:mx-[15px] mb-[20px] lg:w-[55vw] text-boxclr">
                 <img
-                  className="max-h-[100%] d-block"
+                  className="lg:max-h-[100%] d-block w-100"
                   src="/playground.png"
                   alt="vector"
                 />
@@ -333,12 +333,15 @@ export default function Playground() {
           </div>
         </div>
 
-        <div className="flex justify-center my-[70px]">
+        <div className="flex justify-center sm:flex-row gap-[10px] my-[70px]">
           <Button
             onClick={downloadHandler}
             className="bg-btnbg rounded py-3 px-5 hover:bg-btnbg flex justify-center items-center text-center border-gradient "
           >
             {isLoading ? <Loader /> : "DOWNLOAD"}
+          </Button>
+          <Button className="bg-btnbg rounded py-3 px-5 hover:bg-btnbg flex justify-center items-center text-center border-gradient ">
+            View
           </Button>
         </div>
       </div>
