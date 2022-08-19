@@ -354,3 +354,9 @@ input[type="number"]:-ms-input-placeholder {
   right: 0;
   filter: blur(120px);
 }
+
+@media screen and (max-width: 640px) {
+  .flex-639px-column {
+    flex-direction: column;
+  }
+}

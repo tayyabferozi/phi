@@ -36,9 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-@media screen and (max-width: 640px) {
-  .flex-639px-column {
-    flex-direction: column;
-  }
-}
