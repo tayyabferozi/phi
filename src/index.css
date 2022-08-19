@@ -360,3 +360,9 @@ input[type="number"]:-ms-input-placeholder {
     flex-direction: column;
   }
 }
+
+.gradient-text {
+  background: linear-gradient(to right, #4de3c7, #5869ff, #7c33f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
